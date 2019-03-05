@@ -4,10 +4,15 @@
 
 using namespace std;
 
+int dynamic_little() {
+	int x = 0;
+	*(char*)&x = 1;
+	return x < 255;
+}
+
 int main() {
-	int x = 5;
-	x = endian_convert(x);
-	cout << hex << x << endl;
+	cout << "Static : " << little_endian() << endl
+		<< "Dynamic : " << dynamic_little() << endl;
 	return 0;
 }
 

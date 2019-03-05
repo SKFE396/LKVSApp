@@ -1,4 +1,6 @@
 *.opendb
+*.db
+*.suo
 # Prerequisites
 *.d
 
