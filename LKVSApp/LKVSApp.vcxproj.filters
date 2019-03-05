@@ -21,12 +21,30 @@
     <ClInclude Include="endian.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lkvs_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base_adaptor_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lkvs_constants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base_adaptor_file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lkvs_errors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LKVSApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base_adaptor_file.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
