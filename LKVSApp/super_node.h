@@ -6,6 +6,6 @@
 // 位于VD首部的块，用于表示VS的根信息
 
 struct header_node {
-	unsigned long file_type_mark; // = 'lkvs'
-	unsigned long lkvs_version; // = { {1, 0}, {0, 0} }
+	char file_type_mark[4]; // = 'lkvs'
+	unsigned char lkvs_version[4]; // = { {1, 0}, {0, 0} }
 };

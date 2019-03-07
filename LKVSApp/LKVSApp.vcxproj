@@ -152,11 +152,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="base_adaptor_file.h" />
-    <ClInclude Include="base_adaptor_interface.h" />
     <ClInclude Include="basic_service.h" />
     <ClInclude Include="endian.h" />
-    <ClInclude Include="LKVS.h" />
+    <ClInclude Include="lkvs.h" />
     <ClInclude Include="lkvs_base.h" />
+    <ClInclude Include="lkvs_kernel_base.h" />
     <ClInclude Include="lkvs_constants.h" />
     <ClInclude Include="lkvs_errors.h" />
     <ClInclude Include="lkvs_types.h" />
@@ -164,7 +164,6 @@
     <ClInclude Include="super_node.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="base_adaptor_file.cpp" />
     <ClCompile Include="LKVSApp.cpp" />
     <ClCompile Include="LKVS_base.cpp" />
     <ClCompile Include="pch.cpp">
