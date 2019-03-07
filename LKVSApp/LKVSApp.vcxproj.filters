@@ -36,6 +36,18 @@
     <ClInclude Include="lkvs_errors.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="basic_service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="super_node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lkvs_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LKVS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -45,6 +57,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="base_adaptor_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LKVS_base.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
