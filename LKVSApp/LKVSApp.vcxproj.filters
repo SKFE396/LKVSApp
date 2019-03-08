@@ -27,9 +27,6 @@
     <ClInclude Include="lkvs_constants.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="base_adaptor_file.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="lkvs_errors.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -48,6 +45,9 @@
     <ClInclude Include="lkvs.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lkvs_encryption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -57,6 +57,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LKVS_base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lkvs_encryption.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
