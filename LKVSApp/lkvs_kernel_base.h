@@ -2,7 +2,7 @@
 #include "lkvs_constants.h"
 #include "lkvs_types.h"
 #include "lkvs_errors.h"
-#include "lkvs_encryption_interface.h"
+#include "lkvs_encryption.h"
 
 class lkvs_kernel_base {
 	// lkvs_kernel_base : 抽象主类，实现LKVS主要逻辑功能。由实现底层接口后成为完整类型。
@@ -67,5 +67,6 @@ private:
 	/* ==========================私有成员========================== */
 	/* =========================================================== */
 private:
-	const static 
+	int status; // b0 loaded  b1 
+	lkvs_encryption m_encryptor;
 };
