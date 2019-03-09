@@ -160,6 +160,7 @@
     <ClInclude Include="lkvs_constants.h" />
     <ClInclude Include="lkvs_errors.h" />
     <ClInclude Include="lkvs_types.h" />
+    <ClInclude Include="md5.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="super_node.h" />
   </ItemGroup>
@@ -167,6 +168,7 @@
     <ClCompile Include="LKVSApp.cpp" />
     <ClCompile Include="LKVS_base.cpp" />
     <ClCompile Include="lkvs_encryption.cpp" />
+    <ClCompile Include="md5.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -6,4 +6,5 @@ struct lkvs_encryption {
 	void encrypt(char *, int);
 	void decrypt(char *, int);
 	void set_password(const char *);
+	unsigned char m_key[16];
 };

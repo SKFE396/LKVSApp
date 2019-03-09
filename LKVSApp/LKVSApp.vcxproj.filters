@@ -48,6 +48,9 @@
     <ClInclude Include="lkvs_encryption.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -60,6 +63,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lkvs_encryption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
