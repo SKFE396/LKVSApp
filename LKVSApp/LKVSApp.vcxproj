@@ -168,6 +168,7 @@
     <ClCompile Include="LKVSApp.cpp" />
     <ClCompile Include="LKVS_base.cpp" />
     <ClCompile Include="lkvs_encryption.cpp" />
+    <ClCompile Include="lkvs_kernel_base.cpp" />
     <ClCompile Include="md5.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

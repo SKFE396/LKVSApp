@@ -3,6 +3,7 @@
 #include "lkvs_types.h"
 #include "lkvs_errors.h"
 #include "lkvs_encryption.h"
+#include "super_node.h"
 
 class lkvs_kernel_base {
 	// lkvs_kernel_base : 抽象主类，实现LKVS主要逻辑功能。由实现底层接口后成为完整类型。
@@ -58,6 +59,8 @@ protected:
 	/* =========================================================== */
 public:
 
+	lkvs_kernel_base();
+	virtual ~lkvs_kernel_base();
 
 	/* ==========================私有接口========================== */
 	/* =========================================================== */
@@ -67,6 +70,7 @@ private:
 	/* ==========================私有成员========================== */
 	/* =========================================================== */
 private:
-	int status; // b0 loaded  b1 
+	int status; // b0 loaded  b1 readonly  b2 encrypted  b3 unlocked
 	lkvs_encryption m_encryptor;
+	lkvs_internal::super_node *mp_super_node;
 };
