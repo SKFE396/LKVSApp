@@ -14,7 +14,7 @@ namespace lkvs_internal {
 			unsigned long long total_blocks;
 			unsigned long long used_blocks;
 			long encrypted;
-			unsigned char password_check[64]; // 密码被交换奇偶字节的自身加密以后的值
+			unsigned char password_check[64]; // 密码被蝶形交打乱的自身加密以后的值
 			// 以下开始为加密信息
 			unsigned long long file_count;
 			unsigned long long dir_count;

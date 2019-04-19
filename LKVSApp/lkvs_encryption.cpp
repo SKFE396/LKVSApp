@@ -20,12 +20,12 @@ void lkvs_encryption::decrypt(char *, int)
 {
 }
 
-void lkvs_encryption::set_password(const char *password)
+void lkvs_encryption::set_password(const char *password, int length)
 {
 	// 求出密码的MD5作为密钥
 	using joyee::MD5;
 	MD5 hash;
-	hash.update(password, strlen(password));
+	hash.update(password, length);
 	hash.finalize();
 	memcpy(m_key, hash.digest, 16);
 }

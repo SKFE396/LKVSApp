@@ -1,5 +1,5 @@
 #pragma once
-#include <exception>
+#include <stdexcept>
 
 /*
     此文件定义可能被lkvs_adaptor<>类抛出的异常
@@ -28,5 +28,8 @@ type(const char *es = pes) : std::exception(es) {} }
 
 
 SET_EXCEPTION(lkvs_unknown_error, "LKVS : unknown error");
-SET_EXCEPTION(lkvs_create_vs_error, "LKVS-CreateVS error");
-SET_EXCEPTION(lkvs_format_vd_error, "LKVS-FormatVD error");
+SET_EXCEPTION(lkvs_create_vs_error, "LKVS.CreateVS error");
+SET_EXCEPTION(lkvs_format_vd_error, "LKVS.FormatVD error");
+
+
+#undef SET_EXCEPTION

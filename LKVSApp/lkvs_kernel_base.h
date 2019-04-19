@@ -22,7 +22,7 @@ protected:
 
 	virtual int resize_vd(block_id) = 0;
 	// 给定块数量，设定VD的新容量。
-	// LKVS内部通过调用此函数通知子类，LKVS的数据需要占用更多的空间，或者尾部部分空间成为未使用状态。
+	// LKVS内部通过调用此函数通知子类：LKVS的数据需要占用更多的空间，或者尾部部分空间成为未使用状态。
 
 
 
@@ -33,14 +33,14 @@ protected:
 	int check_vs();
 	// 0 未找到VS 1 找到可以加载的VS 2 找到过高版本的VS
 
-	int initialize_vs(int encrypted = 0, const char *password = nullptr, block_id block_count = 1);
+	int initialize_vs(int encrypted = 0, const char *password = nullptr, block_id block_count = 2);
 	// 用于在新的VD上初始化文件系统结构，类似于“格式化”，应在连接到新的空白VD时调用。
 
 	int load_vs(int read_only = 0);
 	// 用于从VD中加载文件系统基本信息，应在连接到已存在VS的VD后调用。
 
 	int vs_status();
-	// bit0 是否加载 bit1 是否加密 bit2 是否验证通过 bit3 是否只读
+	// bit0 是否加载 bit1 是否只读 bit2 是否加密 bit3 是否验证通过
 
 	int login(const char *password);
 	// 对已加密的VS验证密码
@@ -70,7 +70,7 @@ private:
 	/* ==========================私有成员========================== */
 	/* =========================================================== */
 private:
-	int status; // b0 loaded  b1 readonly  b2 encrypted  b3 unlocked
+	int m_status; // b0 loaded  b1 readonly  b2 encrypted  b3 unlocked
 	lkvs_encryption m_encryptor;
 	lkvs_internal::super_node *mp_super_node;
 };

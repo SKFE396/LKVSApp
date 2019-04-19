@@ -30,7 +30,7 @@ public:
 	int is_open();
 	int is_read_only();
 	int is_vd_file_formated(); // 0 no 1 supported version 2 unsupported version
-	int format_vd_file(int encrypted = 0, const char *password = nullptr, block_id block_count = 1);
+	int format_vd_file(int encrypted = 0, const char *password = nullptr, block_id block_count = 2);
 	int load_vfs();
 	int is_vfs_encrypted();
 	int is_vfs_unlocked();
